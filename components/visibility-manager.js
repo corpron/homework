@@ -25,7 +25,7 @@ export class VisibilityManager {
 
   // returns true if the element is fully in the viewport
   isElementInViewport(element) {
-    let elementCoordinates = element.getBoundingClientRect();
+    const elementCoordinates = element.getBoundingClientRect();
     return (
       elementCoordinates.top >= 0 &&
       elementCoordinates.left >= 0 &&
